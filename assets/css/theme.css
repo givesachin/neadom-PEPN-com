@@ -1,0 +1,111 @@
+
+@font-face { font-family: Lato Bold; src: url('../fonts/Lato/Lato-Bold.ttf'); }
+@font-face { font-family: Lato Medium; src: url('../fonts/Lato/Lato-Medium.ttf'); }
+@font-face { font-family: Lato Italic; src: url('../fonts/Lato/Lato-Italic.ttf'); }
+@font-face { font-family: Lato Regular; src: url('../fonts/Lato/Lato-Regular.ttf'); }
+@font-face { font-family: Lato Semi Bold; src: url('../fonts/Lato/LatoSemibold.ttf'); }
+@font-face { font-family: Lato Bold Italic; src: url('../fonts/Lato/Lato-BoldItalic.ttf'); }
+@font-face { font-family: Glacial Indifference Bold; src: url('../fonts/GlacialIndifference-Bold.otf'); }
+@font-face { font-family: Glacial Indifference Regular; src: url('../fonts/GlacialIndifference-Regular.otf'); }
+
+
+
+/* Fonts */
+.lato-bold { font-family: Lato Bold; }
+.lato-medium { font-family: Lato Medium; }
+.lato-italic { font-family: Lato Italic; }
+.lato-regular { font-family: Lato Regular; }
+.lato-semibold { font-family: Lato Semi Bold; }
+.lato-bold-italic { font-family: Lato Bold Italic; }
+.glacial-indifference-bold { font-family: Glacial Indifference Bold; }
+.glacial-indifference-regular { font-family: Glacial Indifference Regular; }
+
+
+
+.pepn-font-g1 { font-size: 32px; }
+.pepn-font-g2 { font-size: 24px; }
+.pepn-font-g3 { font-size: 20px; }
+.pepn-font-g4 { font-size: 16px; }
+.pepn-font-g5 { font-size: 16px; } 
+.pepn-font-sp-g5 { font-size: 22px; } 
+.pepn-font-g6 { font-size: 16px; }
+.pepn-font-sp-g6 { font-size: 20px; } 
+.pepn-font-g7 { font-size: 16px; line-height: 2; }
+
+@media (min-width: 576px) and (max-width: 799px)
+{
+    .pepn-font-g1 { font-size: 36px; line-height: 1.1; }
+    .pepn-font-g2 { font-size: 28px; }
+    .pepn-font-g3 { font-size: 24px; }
+    .pepn-font-g4 { font-size: 20px; }
+    .pepn-font-g5 { font-size: 18px; } 
+    .pepn-font-sp-g5 { font-size: 22px; } 
+    .pepn-font-g6 { font-size: 16px; }
+    .pepn-font-sp-g6 { font-size: 24px; } 
+    .pepn-font-g7 { font-size: 16px; }
+}
+
+/* @media (min-width: 768px) and (max-width: 991px)
+{
+    .pepn-font-g1 { font-size: 40px; line-height: 1.1; }
+    .pepn-font-g2 { font-size: 32px; }
+    .pepn-font-g3 { font-size: 28px; }
+    .pepn-font-g4 { font-size: 24px; }
+    .pepn-font-g5 { font-size: 22px; } 
+    .pepn-font-sp-g5 { font-size: 24px; } 
+    .pepn-font-g6 { font-size: 20px; }
+    .pepn-font-sp-g6 { font-size: 22px; } 
+    .pepn-font-g7 { font-size: 16px; }
+} */
+
+@media (min-width: 800px) and (max-width: 1199px)
+{
+    .pepn-font-g1 { font-size: 50px; line-height: 1.1; }
+    .pepn-font-g2 { font-size: 36px; }
+    .pepn-font-g3 { font-size: 34px; }
+    .pepn-font-g4 { font-size: 32px; }
+    .pepn-font-g5 { font-size: 30px; } 
+    .pepn-font-sp-g5 { font-size: 30px; } 
+    .pepn-font-g6 { font-size: 26px; }
+    .pepn-font-sp-g6 { font-size: 28px; min-height: 96px; } 
+    .pepn-font-g7 { font-size: 20px; }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px)
+{
+    .pepn-font-g1 { font-size: 60px; line-height: 1.25; }
+    .pepn-font-g2 { font-size: 40px; }
+    .pepn-font-g3 { font-size: 42px; }
+    .pepn-font-g4 { font-size: 36px; }
+    .pepn-font-g5 { font-size: 34px; } 
+    .pepn-font-sp-g5 { font-size: 34px; } 
+    .pepn-font-g6 { font-size: 30px; }
+    .pepn-font-sp-g6 { font-size: 32px; } 
+    .pepn-font-g7 { font-size: 22px; }
+}
+
+@media (min-width: 1400px)
+{
+    .pepn-font-g1 { font-size: 72px; line-height: 1.25; }
+    .pepn-font-g2 { font-size: 50px; }
+    .pepn-font-g3 { font-size: 48px; }
+    .pepn-font-g4 { font-size: 40px; }
+    .pepn-font-g5 { font-size: 36px; } 
+    .pepn-font-sp-g5 { font-size: 36px; } 
+    .pepn-font-g6 { font-size: 32px; }
+    .pepn-font-sp-g6 { font-size: 32px; } 
+    .pepn-font-g7 { font-size: 24px; }
+}
+
+.contact_form ::placeholder 
+{
+    color: #cbcbcb;
+}
+.contact_form input,
+.contact_form button,
+.contact_form textarea
+{
+    color: #000000;
+    border-radius: 0;
+    border-color: rgb(204, 204, 204);
+}

@@ -1,0 +1,692 @@
+
+/* Commons */
+.header-btn
+{
+    border-radius: 25px;
+    margin-top: 100px;
+    text-align: center;
+    height: 120px; 
+    color: white; 
+    width: 50%;
+    height: auto;
+    min-width: 250px;
+    /* font-size: 35px; */
+}
+.gradient-background1
+{
+    background-image: linear-gradient(90deg, rgba(0,138,238,1) 0%, rgba(0,174,214,1) 50%, rgba(0,202,196,1) 100%);
+}
+.icon-quote
+{
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 32px;
+    height: 25px;
+}
+.icon-quote-start
+{
+    background-image: url('../../assets/svgs/quote-start.svg');
+}
+.icon-quote-end
+{
+    background-image: url('../../assets/svgs/quote-end.svg');
+    margin-left: 5px;
+}
+
+
+
+/* Section One - Carousel  */
+
+.section-one-outerbox
+{
+    min-height: 100vh;
+    width: 100%;
+    background: url('../../assets/images/background1.jpg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+}
+.section-one-innerbox
+{
+    height: 100%; 
+    width: 100%;
+    padding: 50px 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%, rgba(255,255,255,0) 100%);
+}
+.logo
+{
+    width: 100%;
+}
+.section-one-p
+{
+    color: white;
+    padding: 0 10px;
+}
+.section-one-box
+{
+    margin: 0 30px;
+}
+@media (min-width: 576px) and (max-width: 767px)
+{
+    .logo
+    {
+        width: 300px;
+    }
+    .section-one-p
+    {
+        margin-left: 102px;
+        line-height: 1.15;
+    }
+    .section-one-box
+    {
+        margin: 0 40px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .logo
+    {
+        width: 400px;
+    }
+    .section-one-p
+    {
+        margin-left: 140px;
+        margin-top: -10px;
+        line-height: 1.5;
+    }
+    .section-one-box
+    {
+        margin: 0 50px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    .logo
+    {
+        width: 500px;
+    }
+    .section-one-p
+    {
+        margin-left: 178px;
+        margin-top: -40px;
+    }
+    .section-one-box
+    {
+        margin: 0 60px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1399px)
+{
+    .logo
+    {
+        width: 600px;
+    }
+    .section-one-p
+    {
+        margin-left: 215px;
+        margin-top: -40px;
+    }
+    .section-one-box
+    {
+        margin: 0 70px;
+    }
+}
+@media (min-width: 1400px)
+{
+    .logo
+    {
+        width: 700px;
+    }
+    .section-one-p
+    {
+        margin-left: 254px;
+        margin-top: -50px;
+    }
+    .section-one-box
+    {
+        margin: 0 80px;
+    }
+}
+
+
+
+
+/*  Section Two - Our Focus */
+
+.section-two-header
+{
+    display: inline-block;
+    font-family: inter; 
+    color:#01A3D9;
+    /* font-size: 48px; */
+}
+.section-two-header-line
+{
+    border-bottom: 2px solid black;
+    width: 150px;
+    margin-bottom: 12px;
+}
+
+.section-two-title
+{
+    /* font-size: 35px; */
+    /* line-height: 1.25; */
+}
+.section-two-description
+{
+    /* font-size: 26px; */
+}
+
+@media (min-width: 768px)
+{
+    .section-two-title
+    {
+        /* font-size: 40px; */
+    }
+    .section-two-header-line
+    {
+        width: 40%;
+    }
+}
+
+
+
+/* Section 3 - OUR APPROACH */
+
+.section-three
+{
+    margin-top: 100px;
+}
+.our-approach-image
+{
+    margin-top: -5%;
+}
+.our-approach-image img
+{
+    height: auto;
+    width: 100%;
+}
+.our-approach-title
+{
+    /* font-size:34px; */
+    color: white;
+    margin-bottom: 15px;
+}
+.our-approach-description
+{
+    color: white;
+    /* line-height: 1.5; */
+}
+@media (min-width: 768px)
+{
+    .our-approach-image img
+    {
+        height: 105%;
+        width: auto;
+    }
+}
+
+/* Section 4 - OUR VALUES SECTIONS */
+
+.our-values-item-box
+{
+    width: 100%;
+    text-align: center;
+}
+.our-values-item
+{
+    max-width: 500px;
+}
+.our-values-item-image
+{
+    margin-top: 75px;
+    height: 100px; 
+    width: 150px;
+}
+.our-values-item-title
+{
+    /* font-size: 35px; */
+    /* line-height: 42px; */
+}
+.our-values-item-description
+{
+    /* font-size: 27px;  */
+    max-width: 500px;
+}
+
+
+
+/* Section 5 - OUR STORY SECTION */
+.our-story-image-outerbox
+{
+    min-height: 550px;
+}
+.our-story-image-innerbox
+{
+    height: 100%; 
+    padding: 0 5% 0 5%; 
+    width: 100%; 
+    max-width: 500px; 
+    margin: -3% 0;
+}
+.our-story-image-box1
+{
+    height: 50%; 
+    margin-bottom: -9%; 
+    /* margin-top: -1.5%; */
+}
+.our-story-image-box2
+{
+    height: 50%; 
+    /* margin-bottom: 0;  */
+    margin-top: -9%;
+}
+.our-story-image
+{
+    aspect-ratio: 1; 
+    border-radius: 50%; 
+    border: 2px solid white; 
+    background-size: cover;
+}
+
+@media (min-width: 576px)
+{
+    .our-story-image-outerbox
+    {
+        min-height: 650px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    .our-story-image-outerbox
+    {
+        max-height: 800px;
+    }
+    .our-story-image-innerbox
+    {
+        height: 106%; 
+        padding: 0 5% 0 5%; 
+        width: 100%; 
+        max-width: 500px; 
+        margin: -3% 0;
+    }
+    .our-story-image-box1
+    {
+        height: 55%; 
+        margin-bottom: -9%; 
+        margin-top: -1.5%;
+    }
+    .our-story-image-box2
+    {
+        height: 55%; 
+        margin-bottom: 0; 
+        margin-top: -9%;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .our-story-image-outerbox
+    {
+        min-height: 600px;
+    }
+    .our-story-image-innerbox
+    {
+        height: 106%; 
+        padding: 0 5% 0 5%; 
+        width: 100%; 
+        max-width: 500px; 
+        margin: -3% 0;
+    }
+    .our-story-image-box1
+    {
+        height: 55%; 
+        margin-bottom: -9%; 
+        margin-top: -1.5%;
+    }
+    .our-story-image-box2
+    {
+        height: 55%; 
+        margin-bottom: 0; 
+        margin-top: -9%;
+    }
+}
+
+
+
+/* Section 6 - OUR BRAND SECTION */
+
+.our-brands-head-description
+{
+    text-align: center; 
+    /* font-size: 33px;  */
+    /* line-height: 1.5; */
+}
+.our-brands-item-left img
+{
+    max-width: 320px;
+}
+.our-brands-item-left
+{
+    display: block;
+}
+.our-brands-item-right
+{
+    display: block;
+    width: 100%;
+    padding-left: 0;
+}
+.our-brands-title
+{
+    color: #00539F; 
+    /* font-size: 36px;  */
+    line-height: 1;
+}
+.our-brands-short-description
+{
+    /* font-size: 32px; */
+}
+.our-brands-title-second
+{
+    /* font-size: 41px;  */
+}
+.our-brands-description
+{
+    /* font-size: 33px; */
+}
+@media (min-width: 992px)
+{
+    .our-brands-item-left
+    {
+        display: inline-block;
+        width: 250px;
+    }
+    .our-brands-item-right
+    {
+        display: inline-block;
+        width: calc(100% - 250px);
+        padding-left: 50px;
+    }
+}
+
+/* Section 7 - FOUNDERS AND TEAMS SECTION */
+.our-team-head-btn
+{
+    margin-bottom: -50px;
+}
+.our-team-outerbox
+{
+    background-color: #e0f4fa;
+}
+.our-team-innerbox
+{
+    border-radius: 25px;
+    width: 100%;
+    max-width: 400px;
+}
+.our-team-title
+{
+    color: #00C8C5; 
+    text-align: center; 
+    /* font-size: 40px; */
+}
+.our-team-title-secondary
+{
+    color: black; 
+    text-align: center; 
+    /* font-size: 29px;   */
+}
+.our-team-image
+{
+    display: flex; 
+    align-self: center; 
+    border-radius: 50%; 
+    width: 200px; 
+    height: 200px;
+    background-color: #919191;
+}
+.our-team-image img
+{
+    border-radius: 50%; 
+}
+.our-team-quote
+{
+    /* font-size: 24px;  */
+    color: black;
+}
+
+@media (min-width: 1400px) and (max-width: 1580px)
+{
+    .our-team-title-secondary
+    {
+        /* min-height: 96px; */
+        font-size: 26px;
+    }
+}
+
+/* Section 8 - OUTSIDE TEAMS SECTION */
+
+.ourside-team-title
+{
+    margin-top: 10px;
+    color: black;
+    margin-bottom: 20px;
+}
+.ourside-team-image
+{
+    width: 200px;
+    height: 100px;
+    margin-top: 25px;
+}
+.ourside-team-image img
+{
+    aspect-ratio: 1;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 125px;
+}
+@media (min-width: 576px) and (max-width: 767px)
+{
+    .ourside-team-title
+    {
+        margin-top: 20px;
+        color: black;
+    }
+    .ourside-team-image
+    {
+        width: 200px;
+        height: 125px;
+        margin-top: 25px;
+    }
+    .ourside-team-image img
+    {
+        aspect-ratio: 1;
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+        max-height: 125px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px)
+{
+    .ourside-team-title
+    {
+        margin-top: 20px;
+        color: black;
+    }
+    .ourside-team-image
+    {
+        width: 300px;
+        height: 200px;
+        margin-top: 50px;
+    }
+    .ourside-team-image img
+    {
+        aspect-ratio: 1;
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        max-height: 200px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .ourside-team-title
+    {
+        margin-top: 20px;
+        color: black;
+    }
+    .ourside-team-image
+    {
+        width: 300px;
+        height: 200px;
+        margin-top: 100px;
+    }
+    .ourside-team-image img
+    {
+        aspect-ratio: 1;
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        max-height: 200px;
+    }
+}
+
+
+
+/* Section 9 - GET IN TOUCH SECTION */
+
+.get-in-touch
+{
+    background-color: black;
+    color: white; 
+    width: auto;
+    /* font-size: 20px; */
+    border-radius: 10px;
+    padding: 0 25px;
+}
+.get-in-touch-outerbox
+{
+    background-image: url('../../assets/images/get-in-touch-lady.jpg');
+    height: 300px;
+    max-height: 800px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 100px;
+}
+.get-in-touch-innerbox
+{
+    height: 100%; 
+    background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.75) 100%); 
+}
+.get-in-touch-header
+{
+    width: 250px;
+    position: relative;
+    margin-left:-25px;
+    padding: 15px 0;
+    padding-left: 75px;
+    line-height: 1;
+    border-radius: 35px; 
+    color: white;
+    /* font-size: 24px; */
+    min-height: 50px;
+    background: linear-gradient(90deg, #008AEE 2.31%, #00AED6 60.63%, #00CAC4 100%);
+}
+.get-in-touch-description
+{
+    padding: 0 50px; 
+    color: white;
+    margin-top: 25px; 
+    max-width: 750px;
+    /* font-size: 24px; */
+}
+
+
+@media (min-width: 576px) and (max-width: 799px)
+{
+    .get-in-touch
+    {
+        /* font-size: 24px; */
+    }
+    
+    .get-in-touch-innerbox
+    {
+        background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.75) 100%); 
+    }
+    .get-in-touch-header
+    {
+        width: 500px;
+        width: 400px;
+        font-size: 32px;
+        margin-left:-25px;
+        padding: 32px 0;
+        padding-left: 75px;
+        min-height: 100px;
+    }
+    .get-in-touch-description
+    {
+        /* font-size: 45px; */
+    }
+}
+@media (min-width: 800px) and (max-width: 1200px)
+{
+    .get-in-touch
+    {
+        /* font-size: 30px; */
+    }
+    .get-in-touch-outerbox
+    {
+        min-height: 400px;
+    }
+    .get-in-touch-innerbox
+    {
+        min-height: 400px;
+        background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%);
+    }
+    .get-in-touch-header
+    {
+        width: 400px;
+        font-size: 32px;
+        margin-left:-25px;
+        padding: 32px 0;
+        padding-left: 75px;
+        min-height: 100px;
+    }
+    .get-in-touch-description
+    {
+        /* font-size: 45px; */
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .get-in-touch
+    {
+        /* font-size: 36px; */
+    }
+    .get-in-touch-outerbox
+    {
+        min-height: 500px;
+    }
+    .get-in-touch-innerbox
+    {
+        min-height: 500px;
+        background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%);
+    }
+    .get-in-touch-header
+    {
+        width: 500px;
+        /* font-size: 45px; */
+        padding-top: 25px;
+        padding-bottom: 25px;
+        min-height: 100px;
+    }
+    .get-in-touch-description
+    {
+        /* font-size: 45px; */
+    }
+}
