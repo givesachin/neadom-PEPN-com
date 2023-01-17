@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-route.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </head>
 
-<body>
+<body ng-app="pepnApp" ng-controller="controller">
 
     <!-- Section One - Carousel -->
 
@@ -538,25 +544,44 @@
 
     <!-- Section 10 - MESSAGE SECTION -->
     <div class="container mb-5 lato-bold contact_form w-100 w-md-75" id="contact_form_section">
-        <form method="post" action="https://unique-func.azurewebsites.net/api/sendgrid_email?code=GcJwU7tew1BcDUAE4uZ7bgVZh83kH9Ca70mOyJeaJ94HKhJ07WPvsg==">
+        <form id="inquiry_form" action="https://unique-func.azurewebsites.net/api/sendgrid_email?code=GcJwU7tew1BcDUAE4uZ7bgVZh83kH9Ca70mOyJeaJ94HKhJ07WPvsg==">
             <div class="row mt-5">
                 <div class="col-md-6">
-                    <input class="form-control mb-4" type="text" id="name" name="name" placeholder="NAME" required>
+                    <input class="form-control mb-4" type="text" id="name" name="name" ng-model="name" placeholder="NAME" required>
                 </div>
                 <div class="col-md-6">
-                    <input class="form-control mb-4" type="email" id="email" name="email" placeholder="EMAIL" required>
+                    <input class="form-control mb-4" type="email" id="email" name="email" ng-model="email" placeholder="EMAIL" required>
                 </div>
             </div>
             <div class="mb-3">
-                <textarea class="form-control" id="message" name="message" rows="6" placeholder="MESSAGE" required></textarea>
+                <textarea class="form-control" id="message" name="message" rows="6" ng-model="message" placeholder="MESSAGE" required></textarea>
             </div>
             <div class="d-flex justify-content-center mt-4">
-                <button class="btn btn-outline-secondary" type="submit" style="color: lightgrey;">SEND MESSAGE</button>
+                <button class="btn btn-outline-secondary" type="button" ng-click="submitData();" style="color: lightgrey;">SEND MESSAGE</button>
             </div>
         </form>
     </div>
 
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">Success</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                Your query has been sent successfully and will get in touch soon.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
 </body>
 
 </html>
