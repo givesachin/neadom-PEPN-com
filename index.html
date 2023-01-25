@@ -8,6 +8,9 @@
 
     <title>PEPN</title>
 
+    <!-- jquery script file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -538,7 +541,7 @@
 
     <!-- Section 10 - MESSAGE SECTION -->
     <div class="container mb-5 lato-bold contact_form w-100 w-md-75" id="contact_form_section">
-        <form method="post" action="https://unique-func.azurewebsites.net/api/sendgrid_email?code=GcJwU7tew1BcDUAE4uZ7bgVZh83kH9Ca70mOyJeaJ94HKhJ07WPvsg==">
+        <div id="new_form">
             <div class="row mt-5">
                 <div class="col-md-6">
                     <input class="form-control mb-4" type="text" id="name" name="name" placeholder="NAME" required>
@@ -551,12 +554,84 @@
                 <textarea class="form-control" id="message" name="message" rows="6" placeholder="MESSAGE" required></textarea>
             </div>
             <div class="d-flex justify-content-center mt-4">
-                <button class="btn btn-outline-secondary" type="submit" style="color: lightgrey;">SEND MESSAGE</button>
+                <button class="btn btn-outline-secondary" type="button" onclick="sendData()"
+                    style="color: lightgrey;">SEND MESSAGE</button>
             </div>
-        </form>
+        </div>
+    </div>
+    
+
+    <div class="modal fade bd-example-modal-sm" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModal" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content bg-success text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Success.</h5>
+                <button type="button" class="close bg-success border-0 text-white" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Your data has been submitted successfully.
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-sm" id="failureModal" tabindex="-1" role="dialog" aria-labelledby="successModal" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content bg-danger text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Success.</h5>
+                    <button type="button" class="close bg-danger border-0 text-white" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Your data has been submitted successfully.
+                </div>
+              </div>
+        </div>
     </div>
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        function sendData()
+        {
+            let data = {};
+
+            $('#new_form').find('input, textarea, select').each(function(x, field) {
+                if (field.name) {
+                    if (field.name.indexOf('[]')>0) {
+                        if (!$.isArray(data[field.name])) {
+                        data[field.name]=new Array();
+                        }
+                        data[field.name].push(field.value);
+                    } else {
+                        data[field.name]=field.value;
+                    }
+                }                   
+            });
+
+            submitData(data);
+        }
+        
+        async function submitData(data = {})
+        {
+            let url = 'https://pepnemail.azurewebsites.net/api/pepnemail?code=iOLIzkMMhY0RCPpdrRyeWlgKew_K6TGmH-UV_8o0cQeMAzFuMB8Low==';
+
+            fetch(url, {
+                method: 'POST',
+                mode :'no-cors',
+                body : JSON.stringify(data),
+            }).then( response => {
+                $('#successModal').modal('show');
+            } )
+            .catch (error => {
+                $('#failureModal').modal('show');
+            })
+        }
+    </script>
 </body>
 
 </html>
