@@ -581,23 +581,30 @@
         <div class="modal-dialog modal-sm">
             <div class="modal-content bg-danger text-white">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Success.</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Failure.</h5>
                     <button type="button" class="close bg-danger border-0 text-white" data-bs-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    Your data has been submitted successfully.
+                    Something went wrong.
                 </div>
               </div>
         </div>
     </div>
+
+    <div id="preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
+
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
     <script>
         function sendData()
         {
+            $("#preloader").fadeIn();
+
             let data = {};
 
             $('#new_form').find('input, textarea, select').each(function(x, field) {
@@ -625,9 +632,11 @@
                 mode :'no-cors',
                 body : JSON.stringify(data),
             }).then( response => {
+                $("#preloader").fadeOut();
                 $('#successModal').modal('show');
             } )
             .catch (error => {
+                $("#preloader").fadeOut();
                 $('#failureModal').modal('show');
             })
         }
